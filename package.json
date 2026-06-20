@@ -1,6 +1,9 @@
 {
   "name": "employee-management-system",
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "workspaces": [
     "Backend",
     "Frontend/frontend"
