@@ -88,21 +88,20 @@ Deploy from the repository root:
 Assesment/
 ```
 
-Vercel uses the included `vercel.json` file:
+Vercel uses the included `vercel.json` file. It explicitly builds:
 
-- Install command: `npm install`
-- Build command: `npm run build`
-- Output directory: `dist`
-- API function: `api/index.js`
+- Static frontend: root `package.json` with output in `dist`
+- API function: `api/index.js` with `@vercel/node`
 
 In Vercel Project Settings:
 
 - Root Directory: leave empty or set to the repository root
-- Install Command: leave empty, or set to `npm install`
-- Build Command: leave empty, or set to `npm run build`
-- Output Directory: leave empty, or set to `dist`
+- Framework Preset: `Other`
+- Install Command: leave empty
+- Build Command: leave empty
+- Output Directory: leave empty
 
-Do not set Root Directory to `Backend`.
+Do not set Root Directory to `Backend` or `Frontend/frontend`.
 
 Do not use this old install command:
 
