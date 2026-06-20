@@ -166,22 +166,22 @@ function App() {
             <tbody>
               {employees.map((employee) => (
                 <tr key={employee._id || employee.employeeNo}>
-                  <td className="font-mono">
+                  <td className="font-mono" data-label="Employee No">
                     #{String(employee.employeeNo).padStart(3, '0')}
                   </td>
-                  <td className="employee-name">{employee.employeeName}</td>
-                  <td>{employee.designation}</td>
-                  <td className="salary">
+                  <td className="employee-name" data-label="Employee Name">{employee.employeeName}</td>
+                  <td data-label="Designation">{employee.designation}</td>
+                  <td className="salary" data-label="Salary">
                     ${Number(employee.salary).toLocaleString(undefined, {
                       minimumFractionDigits: 2,
                     })}
                   </td>
-                  <td className="text-right action-cell">
+                  <td className="text-right action-cell" data-label="Edit">
                     <button className="action-btn edit-btn" type="button" onClick={() => openEditModal(employee)}>
                       Edit
                     </button>
                   </td>
-                  <td className="text-right action-cell">
+                  <td className="text-right action-cell" data-label="Delete">
                     <button className="action-btn delete-btn" type="button" onClick={() => deleteEmployee(employee.employeeNo)}>
                       Delete
                     </button>

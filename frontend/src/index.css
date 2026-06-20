@@ -1,15 +1,30 @@
-:root {
-  --bg-main: #f8fafc;
-  --bg-card: #ffffff;
-  --border-color: #e2e8f0;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --primary: #4f46e5;
-  --primary-hover: #4338ca;
-  --danger: #ef4444;
-  --danger-hover: #dc2626;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+:root {
+  /* Rich, vibrant color palette */
+  --bg-main: #f3f6fc;
+  --bg-card: #ffffff;
+  --border-color: #e5e9f2;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  
+  /* Vibrant Primary */
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-light: #e0e7ff;
+  
+  /* Danger Colors */
+  --danger: #f43f5e;
+  --danger-hover: #e11d48;
+  --danger-light: #ffe4e6;
+
+  /* Elevations */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -4px rgba(0,0,0,0.02);
+  --shadow-modal: 0 25px 50px -12px rgba(0,0,0,0.15);
+
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: var(--text-main);
   background-color: var(--bg-main);
   font-synthesis: none;
@@ -27,10 +42,15 @@
 body {
   min-width: 320px;
   min-height: 100vh;
+  background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,0.03) 0, transparent 50%), 
+                    radial-gradient(at 50% 0%, hsla(225,39%,30%,0.03) 0, transparent 50%), 
+                    radial-gradient(at 100% 0%, hsla(339,49%,30%,0.03) 0, transparent 50%);
   background-color: var(--bg-main);
+  background-attachment: fixed;
 }
 
 button,
 input {
   font: inherit;
 }
+
