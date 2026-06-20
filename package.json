@@ -9,7 +9,7 @@
     "frontend"
   ],
   "scripts": {
-    "build": "npm --prefix frontend run build",
+    "build": "npm --prefix frontend run build && cp -r frontend/dist dist || xcopy /E /I /Y frontend\\dist dist",
     "dev:backend": "npm --prefix backend run dev",
     "dev:frontend": "npm --prefix frontend run dev",
     "lint": "npm --prefix frontend run lint"
