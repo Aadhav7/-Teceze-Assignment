@@ -25,18 +25,17 @@ A simple CRUD web application for managing employee records.
 Assesment/
   api/
     index.js
-  Backend/
+  backend/
     config/
     controllers/
     models/
     routes/
     app.js
     server.js
-  Frontend/
-    frontend/
-      src/
-      package.json
-      vite.config.js
+  frontend/
+    src/
+    package.json
+    vite.config.js
   package.json
   vercel.json
 ```
@@ -46,7 +45,7 @@ Assesment/
 ### Backend
 
 ```bash
-cd Backend
+cd backend
 npm install
 npm run dev
 ```
@@ -57,7 +56,7 @@ The backend runs on:
 http://localhost:5000
 ```
 
-Create a `.env` file in `Backend/` with:
+Create a `.env` file in `backend/` with:
 
 ```text
 PORT=5000
@@ -69,7 +68,7 @@ MONGO_URI=your_mongodb_connection_string
 From the React app folder:
 
 ```bash
-cd Frontend/frontend
+cd frontend
 npm install
 npm run dev
 ```
@@ -101,15 +100,15 @@ In Vercel Project Settings:
 - Build Command: leave empty
 - Output Directory: leave empty
 
-Do not set Root Directory to `Backend` or `Frontend/frontend`.
+Do not set Root Directory to `backend` or `frontend`.
 
 Do not use this old install command:
 
 ```text
-npm install --prefix Backend && npm install --prefix Frontend/frontend
+npm install --prefix backend && npm install --prefix frontend
 ```
 
-That command breaks when Vercel runs inside `Backend`, because it looks for `Backend/Backend/package.json`.
+That command breaks when Vercel runs inside `backend`, because it looks for `backend/backend/package.json`.
 
 Add this environment variable in Vercel Project Settings:
 

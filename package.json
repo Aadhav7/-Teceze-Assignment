@@ -5,13 +5,13 @@
     "node": ">=20.19.0"
   },
   "workspaces": [
-    "Backend",
-    "Frontend/frontend"
+    "backend",
+    "frontend"
   ],
   "scripts": {
-    "build": "npm --prefix Frontend/frontend run build",
-    "dev:backend": "npm --prefix Backend run dev",
-    "dev:frontend": "npm --prefix Frontend/frontend run dev",
-    "lint": "npm --prefix Frontend/frontend run lint"
+    "build": "npm --prefix frontend run build",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "lint": "npm --prefix frontend run lint"
   }
 }
