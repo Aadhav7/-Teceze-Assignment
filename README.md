@@ -92,7 +92,7 @@ Vercel uses the included `vercel.json` file:
 
 - Install command: `npm install`
 - Build command: `npm run build`
-- Output directory: `Frontend/frontend/dist`
+- Output directory: `dist`
 - API function: `api/index.js`
 
 In Vercel Project Settings:
@@ -100,7 +100,7 @@ In Vercel Project Settings:
 - Root Directory: leave empty or set to the repository root
 - Install Command: leave empty, or set to `npm install`
 - Build Command: leave empty, or set to `npm run build`
-- Output Directory: leave empty, or set to `Frontend/frontend/dist`
+- Output Directory: leave empty, or set to `dist`
 
 Do not set Root Directory to `Backend`.
 
