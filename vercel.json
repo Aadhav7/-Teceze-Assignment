@@ -1,5 +1,5 @@
 {
-  "installCommand": "npm install --workspaces --include-workspace-root",
+  "installCommand": "npm install --prefix Backend && npm install --prefix Frontend/frontend",
   "buildCommand": "npm run build",
   "outputDirectory": "Frontend/frontend/dist",
   "functions": {
